@@ -1,0 +1,3 @@
+138
+a:4:{s:8:"template";a:1:{s:24:"productos/topContent.tpl";b:1;}s:9:"timestamp";i:1310682256;s:7:"expires";i:-1;s:13:"cache_serials";a:0:{}}<div id="lefImg"><img src="http://porta.medialabla.net/images/productosSection/bg-left.png" width="224" height="615" alt="" /></div>
+<div id="rightImg"><img src="http://porta.medialabla.net/images/productosSection/bg-right.png" width="219" height="566" alt="" /></div>
