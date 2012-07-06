@@ -1,13 +1,13 @@
 136
-a:4:{s:8:"template";a:1:{s:22:"index/indexContent.tpl";b:1;}s:9:"timestamp";i:1341548285;s:7:"expires";i:-1;s:13:"cache_serials";a:0:{}}<!doctype html>
+a:4:{s:8:"template";a:1:{s:22:"index/indexContent.tpl";b:1;}s:9:"timestamp";i:1341548439;s:7:"expires";i:-1;s:13:"cache_serials";a:0:{}}<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Iwonder by wcaraza</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="http://localhost/iwonder/stylesheets/styles.css">
+    <link rel="stylesheet" href="http://localhost/iwonder/stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -61,7 +61,7 @@ $ git checkout gh-pages
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="http://localhost/iwonder/javascripts/scale.fix.js"></script>
     
   </body>
 </html>
