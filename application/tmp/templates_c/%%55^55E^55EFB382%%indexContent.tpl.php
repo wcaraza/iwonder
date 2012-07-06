@@ -1,135 +1,68 @@
 <?php /* Smarty version 2.6.26, created on *strftime("%Y-%m-%d %H:%M:%S")
          compiled from index/indexContent.tpl */ ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Home - Porta</title>
-<link rel="stylesheet" media="screen" href="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/css/reset.css" type="text/css" />
-<link rel="stylesheet" media="screen" href="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/css/main.css" type="text/css" />
-<link rel="stylesheet" media="screen" href="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/css/layout.css" type="text/css" />
-<link rel="stylesheet" media="screen" href="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/css/typography.css"type="text/css" />
-<!--[if IE]>
-<link rel="stylesheet" media="screen" href="../css/ie.css" type="text/css" />
-<![endif]-->
-</head>
-<body>
-<div>
-<div id="bgWrapper">
-	<div id="mainNavigationHome">
-	    <div id="menu">
-	        <ul class="clearfix">
-	            <li class="inicio"><a href="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/" class="active"></a></li>
-	            <li class="quienes"><a href="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/quienes-somos"></a></li>
-	            <li class="productos"><a href="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/productos/1-mochilas/modelos/1"></a></li>
-	            <li class="venta"><a href="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/puntos-ventas"></a></li>
-	            <li class="contactenos"><a href="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/contactenos"></a></li>
-	        </ul>
-	    </div>
-	</div>
-		<div id="contentSlide">
-	    <div id="slide">
-	        <div class="bgSlide1">
-	            <div class="lefImg"><img alt="" src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/images/quienesSomos/quien_izq.png" /></div>
-	            <div class="centerImg"><img src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/images/home/actitud.png" alt="" /></div>
-	            <div class="rightImg"><img alt="" src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/images/quienesSomos/quien_der.png" /></div>
-	        </div>
-	        <div class="bgSlide2">
-	            <div class="lefImg"><img src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/images/home/home_a_izq.png" alt="" /></div>
-	            <div class="centerImg"><img src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/images/home/amor.png" alt="" /></div>
-	            <div class="rightImg"><img src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/images/home/home_a_der.png" alt="" /></div>
-	        </div>
-	        <div class="bgSlide3">
-	            <div class="lefImg"><img src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/images/home/home_b_der.png" alt="" /></div>
-	            <div class="centerImg"><img src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/images/home/libertad.png" alt="" /></div>
-	            <div class="rightImg"><img src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/images/home/home_b_izq.png" alt="" /></div>
-	        </div>
-	    </div>	 
-	</div>		
-</div>
-<div id="footerHome">     
-    <div id="wrapper">
-        <div class="clearfix">
-            <div id="productos">
-                <h1><?php echo $this->_tpl_vars['titleOut']; ?>
-</h1>	
-				<div id="containerProductos" class="clearfix">
-                <?php unset($this->_sections['producto']);
-$this->_sections['producto']['name'] = 'producto';
-$this->_sections['producto']['loop'] = is_array($_loop=$this->_tpl_vars['productos']) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
-$this->_sections['producto']['show'] = true;
-$this->_sections['producto']['max'] = $this->_sections['producto']['loop'];
-$this->_sections['producto']['step'] = 1;
-$this->_sections['producto']['start'] = $this->_sections['producto']['step'] > 0 ? 0 : $this->_sections['producto']['loop']-1;
-if ($this->_sections['producto']['show']) {
-    $this->_sections['producto']['total'] = $this->_sections['producto']['loop'];
-    if ($this->_sections['producto']['total'] == 0)
-        $this->_sections['producto']['show'] = false;
-} else
-    $this->_sections['producto']['total'] = 0;
-if ($this->_sections['producto']['show']):
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Iwonder by wcaraza</title>
 
-            for ($this->_sections['producto']['index'] = $this->_sections['producto']['start'], $this->_sections['producto']['iteration'] = 1;
-                 $this->_sections['producto']['iteration'] <= $this->_sections['producto']['total'];
-                 $this->_sections['producto']['index'] += $this->_sections['producto']['step'], $this->_sections['producto']['iteration']++):
-$this->_sections['producto']['rownum'] = $this->_sections['producto']['iteration'];
-$this->_sections['producto']['index_prev'] = $this->_sections['producto']['index'] - $this->_sections['producto']['step'];
-$this->_sections['producto']['index_next'] = $this->_sections['producto']['index'] + $this->_sections['producto']['step'];
-$this->_sections['producto']['first']      = ($this->_sections['producto']['iteration'] == 1);
-$this->_sections['producto']['last']       = ($this->_sections['producto']['iteration'] == $this->_sections['producto']['total']);
-?>
-                	<div class="modeloProductos">
-                        <a href="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/productos/<?php echo $this->_tpl_vars['productos'][$this->_sections['producto']['index']]['key']; ?>
-/modelos/1"><img src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/<?php echo $this->_tpl_vars['productos'][$this->_sections['producto']['index']]['imagen']; ?>
-" alt="" />
-                        <?php echo $this->_tpl_vars['productos'][$this->_sections['producto']['index']]['nombre']; ?>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Iwonder</h1>
+        <p></p>
 
-                        	 <div class="estrella"><img src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/images/estrella.png" alt="" width="26" height="24" /></div>
-                        </a>                       
-                    </div>	
-                 <?php endfor; endif; ?>
-                </div>
-        	</div>	
-            
-            <div id="logo">
-                <img src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/images/logo-porta.png" alt="Logo" />
-                    <div class="logoFacebook"><a href="http://www.facebook.com/portaline" target="_blank"><img src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/images/logoFacebook.jpg" alt="" /></a></div>
-            </div>	
-        </div>	 
+        <p class="view"><a href="https://github.com/wcaraza/iwonder">View the Project on GitHub <small>wcaraza/iwonder</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/wcaraza/iwonder/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/wcaraza/iwonder/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/wcaraza/iwonder">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>Welcome!!!!</h3>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/wcaraza">wcaraza</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
     </div>
-   </div> 
-</div>
-<div style="background:#FFF;">
-</div>
-<script type="text/javascript" src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/js/cycle/jquery.cycle.all.min.js"></script>	
-<script type="text/javascript" src="<?php echo $this->_tpl_vars['baseRoot']; ?>
-/js/site.js"></script>
-<script type="text/javascript">MyApp.home.slide();</script>
-</body>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
 </html>

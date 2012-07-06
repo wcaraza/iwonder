@@ -42,7 +42,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
 		return $view;
 	}
   
-    protected function _initDb()
+    /*protected function _initDb()
     {
 		$config   = Zend_Registry::get('config');
 		$db       = Zend_Db::factory($config->resources->db);
@@ -59,7 +59,7 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         Zend_Registry::set('db', $db);
 
         return $db;
-    }
+    }*/
 
     protected function _initSmarty()
     {
