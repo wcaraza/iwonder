@@ -36,7 +36,7 @@ class Parent_BaseWeb extends Zend_Controller_Action
 		
 	}
 
-	public function render($mainContent)
+	public function xrender($mainContent)
 	{
 		$js = "";
 		if(!empty($this->_js)){	
